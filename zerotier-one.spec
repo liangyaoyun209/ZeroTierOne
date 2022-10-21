@@ -137,7 +137,7 @@ chmod 0755 $RPM_BUILD_ROOT/etc/init.d/zerotier-one
 %endif
 
 %changelog
-* Mon Oct 13 2022 Adam Ierymenko <adam.ierymenko@zerotier.com> - 1.10.2
+* Thu Oct 13 2022 Adam Ierymenko <adam.ierymenko@zerotier.com> - 1.10.2
 - see https://github.com/zerotier/ZeroTierOne for release notes
 
 * Mon Jun 27 2022 Adam Ierymenko <adam.ierymenko@zerotier.com> - 1.10.1
