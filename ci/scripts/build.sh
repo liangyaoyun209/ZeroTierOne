@@ -102,8 +102,6 @@ fi
 export DOCKER_BUILDKIT=1
 docker run --privileged --rm tonistiigi/binfmt --install all
 
-# docker pull --platform linux/${DOCKER_ARCH} registry.sean.farm/${PLATFORM}-builder
-
 docker buildx build \
        --build-arg PLATFORM="${PLATFORM}" \
        --build-arg RUST_TRIPLET="${RUST_TRIPLET}" \

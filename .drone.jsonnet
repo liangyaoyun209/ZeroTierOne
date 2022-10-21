@@ -1,3 +1,4 @@
+local registry = "084037375216.dkr.ecr.us-east-2.amazonaws.com";
 
 local targets = [
       //
@@ -57,17 +58,17 @@ local Build(platform, os, isa, events) = {
   "steps": [
     {
       "name": "build",
-      "image": "registry.sean.farm/honda-builder",
+      "image": "$(registry)/honda-builder",
       "commands": [ "./ci/scripts/build.sh " + platform + " " + isa + " " + "100.0.0+${DRONE_COMMIT_SHA:0:8}" + " " + "${DRONE_BUILD_EVENT}" ]
     },
     {
       "name": "list",
-      "image": "registry.sean.farm/honda-builder",
+      "image": "$(registry)/honda-builder",
       "commands": [ "ls -la " + platform ]
     },
     // {
     //   "name": "notify-mattermost",
-    //   "image": "registry.sean.farm/mattermost-notify",
+    //   "image": "$(registry)/mattermost-notify",
     //   "environment": {
     //     "token": { "from_secret": "mattermost-token" },
     //     "host": { "from_secret": "mattermost-host" },
