@@ -58,12 +58,12 @@ local Build(platform, os, isa, events) = {
   "steps": [
     {
       "name": "build",
-      "image": "$(registry)/honda-builder",
+      "image": registry + "/honda-builder",
       "commands": [ "./ci/scripts/build.sh " + platform + " " + isa + " " + "100.0.0+${DRONE_COMMIT_SHA:0:8}" + " " + "${DRONE_BUILD_EVENT}" ]
     },
     {
       "name": "list",
-      "image": "$(registry)/honda-builder",
+      "image": registry + "/honda-builder",
       "commands": [ "ls -la " + platform ]
     },
     // {

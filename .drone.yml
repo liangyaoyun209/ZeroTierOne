@@ -9,11 +9,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh el9 amd64 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la el9
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -34,11 +34,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh el9 arm64 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la el9
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -56,11 +56,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh el9 ppc64le 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la el9
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -78,11 +78,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh el9 s390x 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la el9
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -100,11 +100,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh el8 amd64 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la el8
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -125,11 +125,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh el8 arm64 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la el8
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -147,11 +147,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh el8 ppc64le 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la el8
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -169,11 +169,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh el8 s390x 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la el8
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -191,11 +191,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh el7 amd64 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la el7
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -213,11 +213,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh el7 ppc64le 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la el7
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -235,11 +235,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh el6 amd64 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la el6
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -257,11 +257,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh amzn2 amd64 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la amzn2
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -282,11 +282,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh amzn2 arm64 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la amzn2
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -304,11 +304,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh fc37 amd64 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la fc37
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -329,11 +329,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh fc37 arm64 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la fc37
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -351,11 +351,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh fc37 ppc64le 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la fc37
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -373,11 +373,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh fc37 s390x 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la fc37
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -395,11 +395,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh fc36 amd64 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la fc36
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -420,11 +420,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh fc36 arm64 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la fc36
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -442,11 +442,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh fc36 ppc64le 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la fc36
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -464,11 +464,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh fc36 s390x 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la fc36
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -486,11 +486,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh fc35 amd64 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la fc35
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -511,11 +511,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh fc35 arm64 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la fc35
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -533,11 +533,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh fc35 ppc64le 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la fc35
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -555,11 +555,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh fc35 s390x 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la fc35
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -577,11 +577,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh jammy amd64 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la jammy
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -602,11 +602,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh jammy arm64 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la jammy
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -624,11 +624,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh jammy riscv64 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la jammy
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -646,11 +646,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh jammy ppc64le 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la jammy
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -668,11 +668,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh jammy s390x 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la jammy
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -690,11 +690,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh focal amd64 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la focal
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -715,11 +715,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh focal arm64 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la focal
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -737,11 +737,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh focal riscv64 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la focal
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -759,11 +759,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh focal ppc64le 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la focal
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -781,11 +781,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh bionic amd64 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la bionic
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -806,11 +806,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh bionic arm64 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la bionic
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -828,11 +828,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh bionic 386 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la bionic
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -850,11 +850,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh bionic ppc64le 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la bionic
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -872,11 +872,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh bionic s390x 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la bionic
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -894,11 +894,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh xenial amd64 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la xenial
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -919,11 +919,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh xenial arm64 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la xenial
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -941,11 +941,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh xenial 386 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la xenial
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -963,11 +963,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh sid 386 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la sid
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -986,11 +986,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh sid amd64 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la sid
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -1012,11 +1012,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh sid arm64 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la sid
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -1035,11 +1035,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh sid riscv64 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la sid
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -1058,11 +1058,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh sid mips64le 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la sid
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -1081,11 +1081,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh sid ppc64le 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la sid
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -1104,11 +1104,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh sid s390x 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la sid
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -1127,11 +1127,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh bookworm amd64 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la bookworm
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -1152,11 +1152,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh bookworm arm64 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la bookworm
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -1174,11 +1174,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh bookworm 386 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la bookworm
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -1196,11 +1196,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh bookworm mips64le 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la bookworm
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -1218,11 +1218,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh bookworm ppc64le 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la bookworm
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -1240,11 +1240,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh bookworm s390x 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la bookworm
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -1262,11 +1262,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh bullseye amd64 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la bullseye
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -1287,11 +1287,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh bullseye arm64 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la bullseye
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -1309,11 +1309,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh bullseye 386 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la bullseye
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -1331,11 +1331,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh bullseye mips64le 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la bullseye
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -1353,11 +1353,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh bullseye ppc64le 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la bullseye
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -1375,11 +1375,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh bullseye s390x 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la bullseye
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -1397,11 +1397,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh buster amd64 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la buster
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -1422,11 +1422,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh buster arm64 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la buster
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -1444,11 +1444,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh buster 386 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la buster
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -1466,11 +1466,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh buster mips64le 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la buster
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -1488,11 +1488,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh buster ppc64le 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la buster
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -1510,11 +1510,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh buster s390x 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la buster
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -1532,11 +1532,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh stretch amd64 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la stretch
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -1557,11 +1557,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh stretch arm64 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la stretch
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
@@ -1579,11 +1579,11 @@ pull: always
 steps:
 - commands:
   - ./ci/scripts/build.sh stretch 386 100.0.0+${DRONE_COMMIT_SHA:0:8} ${DRONE_BUILD_EVENT}
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: build
 - commands:
   - ls -la stretch
-  image: $(registry)/honda-builder
+  image: 084037375216.dkr.ecr.us-east-2.amazonaws.com/honda-builder
   name: list
 trigger:
   event:
