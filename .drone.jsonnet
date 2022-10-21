@@ -59,7 +59,10 @@ local Build(platform, os, isa, events) = {
     {
       "name": "build",
       "image": registry + "/honda-builder",
-      "commands": [ "./ci/scripts/build.sh " + platform + " " + isa + " " + "100.0.0+${DRONE_COMMIT_SHA:0:8}" + " " + "${DRONE_BUILD_EVENT}" ]
+      "commands": [
+        "aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin " + registry,
+        "./ci/scripts/build.sh " + platform + " " + isa + " " + "100.0.0+${DRONE_COMMIT_SHA:0:8}" + " " + "${DRONE_BUILD_EVENT}"
+      ]
     },
     {
       "name": "list",
@@ -78,7 +81,6 @@ local Build(platform, os, isa, events) = {
     //   "when": { "status": [ "failure" ] }
     // }
   ],  
-  "image_pull_secrets": [ "dockerconfigjson" ],
   [ if isa == "arm64" || isa == "armv7" then "platform" ]: { os: os, arch: "arm64" },
   "trigger": { "event": events }
 };
