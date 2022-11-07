@@ -1,26 +1,29 @@
 local registry = "084037375216.dkr.ecr.us-east-2.amazonaws.com";
 
 local targets = [
+      { "os": "linux", "name": "el9", "isas": [ "amd64", "arm64" ], "events": [ "push", "tag", "custom" ] },
+
+
       //
       // Render these into .drone.yaml by running "make drone"
       //
-      { "os": "linux", "name": "el9", "isas": [ "amd64", "arm64", "ppc64le", "s390x" ], "events": [ "tag", "custom" ] },
-      { "os": "linux", "name": "el8", "isas": [ "amd64", "arm64", "ppc64le", "s390x" ], "events": [ "tag", "custom" ] },
-      { "os": "linux", "name": "el7", "isas": [ "amd64", "ppc64le"], "events": [ "tag", "custom" ] },
-      { "os": "linux", "name": "el6", "isas": [ "amd64" ], "events": [ "tag", "custom" ] },
-      { "os": "linux", "name": "amzn2", "isas": [ "amd64", "arm64" ], "events": [ "tag", "custom" ] },
-      { "os": "linux", "name": "fc37", "isas": [ "amd64", "arm64", "ppc64le", "s390x" ], "events": [ "tag", "custom" ] },
-      { "os": "linux", "name": "fc36", "isas": [ "amd64", "arm64", "ppc64le", "s390x" ], "events": [ "tag", "custom" ] },
-      { "os": "linux", "name": "fc35", "isas": [ "amd64", "arm64", "ppc64le", "s390x" ], "events": [ "tag", "custom" ] },
-      { "os": "linux", "name": "jammy", "isas": [ "amd64", "arm64", "riscv64", "ppc64le", "s390x" ], "events": [ "tag", "custom" ] },
-      { "os": "linux", "name": "focal", "isas": [ "amd64", "arm64", "riscv64", "ppc64le"  ], "events": [ "tag", "custom" ] },
-      { "os": "linux", "name": "bionic", "isas": [ "amd64", "arm64", "386", "ppc64le", "s390x" ], "events": ["tag", "custom" ] },
-      { "os": "linux", "name": "xenial", "isas": [ "amd64", "arm64", "386" ], "events": [ "tag", "custom" ] },
-      { "os": "linux", "name": "sid", "isas": [ "386", "amd64", "arm64",  "riscv64", "mips64le", "ppc64le", "s390x" ], "events":   [ "push", "tag", "custom" ] },
-      { "os": "linux", "name": "bookworm", "isas": [ "amd64", "arm64", "386", "mips64le", "ppc64le", "s390x" ], "events": [ "tag", "custom" ] },
-      { "os": "linux", "name": "bullseye", "isas": [ "amd64", "arm64", "386", "mips64le", "ppc64le", "s390x" ], "events": [ "tag", "custom" ] },
-      { "os": "linux", "name": "buster", "isas": [ "amd64", "arm64", "386", "mips64le", "ppc64le", "s390x" ], "events": [ "tag", "custom" ] },
-      { "os": "linux", "name": "stretch", "isas": [ "amd64", "arm64", "386" ], "events": [ "tag", "custom" ] },
+      // { "os": "linux", "name": "el9", "isas": [ "amd64", "arm64", "ppc64le", "s390x" ], "events": [ "tag", "custom" ] },
+      // { "os": "linux", "name": "el8", "isas": [ "amd64", "arm64", "ppc64le", "s390x" ], "events": [ "tag", "custom" ] },
+      // { "os": "linux", "name": "el7", "isas": [ "amd64", "ppc64le"], "events": [ "tag", "custom" ] },
+      // { "os": "linux", "name": "el6", "isas": [ "amd64" ], "events": [ "tag", "custom" ] },
+      // { "os": "linux", "name": "amzn2", "isas": [ "amd64", "arm64" ], "events": [ "tag", "custom" ] },
+      // { "os": "linux", "name": "fc37", "isas": [ "amd64", "arm64", "ppc64le", "s390x" ], "events": [ "tag", "custom" ] },
+      // { "os": "linux", "name": "fc36", "isas": [ "amd64", "arm64", "ppc64le", "s390x" ], "events": [ "tag", "custom" ] },
+      // { "os": "linux", "name": "fc35", "isas": [ "amd64", "arm64", "ppc64le", "s390x" ], "events": [ "tag", "custom" ] },
+      // { "os": "linux", "name": "jammy", "isas": [ "amd64", "arm64", "riscv64", "ppc64le", "s390x" ], "events": [ "tag", "custom" ] },
+      // { "os": "linux", "name": "focal", "isas": [ "amd64", "arm64", "riscv64", "ppc64le"  ], "events": [ "tag", "custom" ] },
+      // { "os": "linux", "name": "bionic", "isas": [ "amd64", "arm64", "386", "ppc64le", "s390x" ], "events": ["tag", "custom" ] },
+      // { "os": "linux", "name": "xenial", "isas": [ "amd64", "arm64", "386" ], "events": [ "tag", "custom" ] },
+      // { "os": "linux", "name": "sid", "isas": [ "386", "amd64", "arm64",  "riscv64", "mips64le", "ppc64le", "s390x" ], "events":   [ "push", "tag", "custom" ] },
+      // { "os": "linux", "name": "bookworm", "isas": [ "amd64", "arm64", "386", "mips64le", "ppc64le", "s390x" ], "events": [ "tag", "custom" ] },
+      // { "os": "linux", "name": "bullseye", "isas": [ "amd64", "arm64", "386", "mips64le", "ppc64le", "s390x" ], "events": [ "tag", "custom" ] },
+      // { "os": "linux", "name": "buster", "isas": [ "amd64", "arm64", "386", "mips64le", "ppc64le", "s390x" ], "events": [ "tag", "custom" ] },
+      // { "os": "linux", "name": "stretch", "isas": [ "amd64", "arm64", "386" ], "events": [ "tag", "custom" ] },
       // { "os": "windows", "name": "win2k19", "isas": [ "amd64" ], "events": ["push", "tag", "custom" ] }
 ];
 
