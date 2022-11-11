@@ -1,7 +1,8 @@
 local registry = "084037375216.dkr.ecr.us-east-2.amazonaws.com";
 
 local targets = [
-      { "os": "linux", "name": "el9", "isas": [ "amd64", "arm64" ], "events": [ "push", "tag", "custom" ] },
+      // { "os": "linux", "name": "el9", "isas": [ "amd64", "arm64" ], "events": [ "push", "tag", "custom" ] },
+      { "os": "linux", "name": "sid", "isas": [ "386", "amd64", "arm64",  "riscv64", "mips64le", "ppc64le", "s390x" ], "events":   [ "push", "tag", "custom" ] },
 
       //
       // Render these into .drone.yaml by running "make drone"
